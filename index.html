@@ -5,7 +5,7 @@
     <title>Semantic HTML</title>
   </head>
   <body>
-    
+    <div class='page'>             <!-- Start of container div -->
     <header>                        <!-- Added -->
     <h1>Interneting Is Easy!</h1>
     <nav>                                    <!-- Added -->
@@ -20,7 +20,7 @@
     <article>
       <header>                      <!-- Added -->
         <h1>Semantic HTML</h1>
-      <p>By Justin Stafford</p>
+      <p>By Justin Stafford. Published <time datetime='2023-11-29'><November 29</time></p>
       </header>  
       <!-- Look! A fake advertisement! -->
   <aside class='advert'>
@@ -29,6 +29,12 @@
       <p>This is an example web page explaining HTML5 semantic markup.</p>
       <section>
         <h2>The Document Outline</h2>
+        <figure>
+    <img src='semantic-elements.png'
+         alt='Diagram showing <article>, <section>, and <nav> elements'/>
+    <figcaption>New HTML5 semantic elements</figcaption>
+  </figure>
+  <!-- ... -->
         <p>HTML5 includes several “sectioning content” elements that affect the
           document outline.</p>
         <h3>Headers</h3>
@@ -52,6 +58,10 @@
       <p>This fake article was written by somebody at InternetingIsHard.com,
         which is a pretty decent place to learn how to become a web developer.
       </p>
+      <address>
+    Please contact <a href='mailto:troymcclure@example.com'>Justin
+    Stafford</a> for questions about this article.
+  </address>
       </footer>                       <!-- Added -->
     </article>
     <aside class='sidebar'>
@@ -77,5 +87,6 @@
     <footer>
     <p>&copy; 2017 InternetingIsHard.com</p>
     </footer>
+    </div>                         <!-- End of container div -->
   </body>
 </html>
